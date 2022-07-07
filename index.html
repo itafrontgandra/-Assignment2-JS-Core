@@ -39,9 +39,10 @@
   <button onclick="subtraction()" id="subtraction">-</button>
   <button onclick="multiplication()" id="multiplication">x</button>
   <button onclick="division()" id="division">/</button>
-   <input type="hidden" id="operator">
-   &nbsp;
-
+  &nbsp;
+  
+  <input type="hidden" id="operator">
+  
   <input type="number" id="number_2" name="" ><br><br>
 
   <input type="submit" value="Izračunaj" onclick="calculator()">
@@ -87,11 +88,13 @@
         sum = isNaN(number1 - number2) ? "Niste uneli broj": number1 - number2;
             alert(sum);
             break;
-        case 'multiplication':
+        
+            case 'multiplication':
         sum = isNaN(number1 * number2) ? "Niste uneli broj": number1 * number2;
             alert(sum);
             break;
-        case 'division':
+        
+            case 'division':
         sum = isNaN(number1 / number2) ? "Niste uneli broj": number1 / number2;
             alert(sum);
             break;
